@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rice,Dal and Poha</title>
+        <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 60px;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+    #align{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    #border{
+        width:270px;
+        height:250px;
+        border:2px solid grey;
+        border-radius: 10px;
+
+    }
+    header{
+    background-color: rgb(89, 89, 243);
+    color:white;
+   padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+   }
+</style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Rice,Dal and Poha</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490830932/tata-sampann-unpolished-tur-arhar-dal-1-kg-product-images-o490830932-p490830932-0-202207201859.jpg">
+    <p>Tata Sampann Arhar Dal (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram"placeholder="kg">
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490005504/india-gate-mogra-basmati-rice-10-kg-product-images-o490005504-p490005504-0-202305112150.jpg">
+    <p>India Gate Mogra Basmati Rice (5kg/10kg)   </p>
+    <input type="text" name="grams"id="gram0"placeholder="kg">
+    <input type="text" name="quntity"id="qun0"placeholder="Qty">
+    <input type="text" name="price" id="price0"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery0()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491185267/good-life-thick-poha-aval-1-kg-product-images-o491185267-p491185267-0-202203141902.jpg">
+    <p>Good Life Thick Poha / Aval (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram1"placeholder="kg">
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491187257/good-life-moong-dal-1-kg-product-images-o491187257-p491187257-0-202301171616.jpg">
+    <p>Good Life Moong Dal (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram2"placeholder="kg">
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490081573/pick-n-cook-thick-poha-aval-500-g-product-images-o490081573-p490081573-0-202305091136.jpg">
+    <p>Pick N Cook Thick Poha / Aval (0.5kg/1kg)  </p>
+    <input type="text" name="grams"id="gram3"placeholder="kg">
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/493073261/good-life-hmt-kolam-rice-10-kg-product-images-o493073261-p596878360-0-202301030204.jpg">
+    <p>Good Life HMT Kolam Rice(10kg/30kg)</p>
+    <input type="text" name="grams"id="gram4"placeholder="kg">
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/492851048/good-life-unpolished-chana-dal-1-kg-product-images-o492851048-p591219172-0-202301252114.jpg">
+    <p>Good Life Unpolished Chana Dal (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram5"placeholder="kg">
+    <input type="text" name="quntity"id="qun5"placeholder="Qty">
+    <input type="text" name="price" id="price5"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery5()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/original/492172771/daawat-premium-lachkari-wada-kolam-rice-10-kg-product-images-o492172771-p593410556-0-202208121852.jpg">
+    <p>Daawat Premium Lachkari Wada Kolam Rice (10kg/25kg)</p>
+    <input type="text" name="grams"id="gram6"placeholder="kg">
+    <input type="text" name="quntity"id="qun6"placeholder="Qty">
+    <input type="text" name="price" id="price6"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery6()">
+</div>
+</div>
+<script>
+    function grocery(){
+        var   g=document.getElementById("gram").value;
+        var  q=document.getElementById("qun").value;
+           var p=g*q*150;
+           document.getElementById("price").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery0(){
+        var   g=document.getElementById("gram0").value;
+        var  q=document.getElementById("qun0").value;
+           var p=g*q*62;
+           document.getElementById("price0").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery1(){
+        var   g=document.getElementById("gram1").value;
+        var  q=document.getElementById("qun1").value;
+           var p=g*q*58;
+           document.getElementById("price1").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery2(){
+        var   g=document.getElementById("gram2").value;
+        var  q=document.getElementById("qun2").value;
+           var p=g*q*130;
+           document.getElementById("price2").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery3(){
+        var   g=document.getElementById("gram3").value;
+        var  q=document.getElementById("qun3").value;
+           var p=g*q*90;
+           document.getElementById("price3").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery4(){
+        var   g=document.getElementById("gram4").value;
+        var  q=document.getElementById("qun4").value;
+           var p=g*q*52;
+           document.getElementById("price4").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery5(){
+        var   g=document.getElementById("gram5").value;
+        var  q=document.getElementById("qun5").value;
+           var p=g*q*90;
+           document.getElementById("price5").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery6(){
+        var   g=document.getElementById("gram6").value;
+        var  q=document.getElementById("qun6").value;
+           var p=g*q*69;
+           document.getElementById("price6").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+  
+</script>
+</body>
+</html>

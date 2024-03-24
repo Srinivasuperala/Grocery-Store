@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakfast Essentials</title>
+        <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 60px;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+    #align{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    #border{
+        width:270px;
+        height:250px;
+        border:2px solid grey;
+        border-radius: 10px;
+
+    }
+    header{
+    background-color: rgb(89, 89, 243);
+    color:white;
+   padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+   }
+</style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Breakfast Essentials</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rvmz7m0gmc/true-elements-steel-cut-oats-gluten-free-1500gm-product-images-orvmz7m0gmc-p593817461-0-202209161709.jpg">
+    <p>True Elements Steel Cut Oats  (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram"placeholder="kg">
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491213993/parle-real-elaichi-premium-rusk-273-g-product-images-o491213993-p491213993-0-202203150326.jpg">
+    <p>Parle Real Elaichi Premium Rusk 300 g</p>
+    <input type="text" name="grams"id="gram0"placeholder="gm">
+    <input type="text" name="quntity"id="qun0"placeholder="Qty">
+    <input type="text" name="price" id="price0"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery0()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490003834/maggi-2-minute-masala-instant-noodles-560-g-product-images-o490003834-p490003834-0-202203150702.jpg">
+    <p>Maggi 2-Minute Masala Instant Noodles(250g/500g)</p>
+    <input type="text" name="grams"id="gram1"placeholder="gm">
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491409955/kellogg-s-fruit-nut-crunchy-muesli-750-g-product-images-o491409955-p491409955-0-202203152122.jpg">
+    <p>Kellogg's Fruit & Nut Muesli (250g/500g)</p>
+    <input type="text" name="grams"id="gram2"placeholder="gm">
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491586426/kellogg-s-corn-flakes-1-2-kg-product-images-o491586426-p491586426-0-202203150843.jpg">
+    <p> Kellogg's Corn Flakes(0.5kg/1kg) </p>
+    <input type="text" name="grams"id="gram3"placeholder="kg">
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490064731/nutella-ferrero-hazelnut-spread-with-cocoa-350-g-product-images-o490064731-p490064731-0-202211211354.jpg">
+    <p>Nutella Ferrero Hazelnut Spread With Cocoa (200g/500g)</p>
+    <input type="text" name="grams"id="gram4"placeholder="gm">
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+</div>
+<script>
+    function grocery(){
+        var   g=document.getElementById("gram").value;
+        var  q=document.getElementById("qun").value;
+           var p=g*q*276;
+           document.getElementById("price").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery0(){
+        var   g=document.getElementById("gram0").value;
+        var  q=document.getElementById("qun0").value;
+           var p=g*q*0.13;
+           document.getElementById("price0").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery1(){
+        var   g=document.getElementById("gram1").value;
+        var  q=document.getElementById("qun1").value;
+           var p=g*q*0.16;
+           document.getElementById("price1").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery2(){
+        var   g=document.getElementById("gram2").value;
+        var  q=document.getElementById("qun2").value;
+           var p=g*q*0.43;
+           document.getElementById("price2").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery3(){
+        var   g=document.getElementById("gram3").value;
+        var  q=document.getElementById("qun3").value;
+           var p=g*q*300;
+           document.getElementById("price3").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery4(){
+        var   g=document.getElementById("gram4").value;
+        var  q=document.getElementById("qun4").value;
+           var p=g*q*0.87;
+           document.getElementById("price4").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       
+  
+</script>
+</body>
+</html>

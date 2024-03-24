@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dry Fruits and Nuts</title>
+        <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 50px;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+    #align{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    #border{
+        width:270px;
+        height:250px;
+        border:2px solid rgb(156, 153, 153);
+        border-radius: 10px;
+
+    }
+    header{
+    background-color: rgb(76, 76, 243);
+    color:white;
+   padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+   }
+</style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Dry Fruits and Nuts</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491186625/good-life-almonds-500-g-product-images-o491186625-p491186625-0-202205180139.jpg">
+    <p>Good Life Almonds (200g/500g)</p>
+    <input type="text" name="grams"id="gram"placeholder="gm">
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rveuyikykk/happilo-premium-whole-cashews-500-g-product-images-orveuyikykk-p590360946-0-202204271307.jpg">
+    <p>Happilo Premium Whole Cashews(250g/500g)</p>
+    <input type="text" name="grams"id="gram0"placeholder="gm">
+    <input type="text" name="quntity"id="qun0"placeholder="Qty">
+    <input type="text" name="price" id="price0"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery0()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rvmjxmadje/herbanuts-anjeer-figs-grade-1-sweet-1-kg-product-images-orvmjxmadje-p594485154-0-202210142043.jpg">
+    <p>Herbanuts Premium Dry Figs| Anjeer (500g/1000g)</p>
+    <input type="text" name="grams"id="gram1"placeholder="gm">
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/492864616/nature-s-choice-mixed-dry-fruits-400-g-product-images-o492864616-p592271389-0-202206291923.jpg">
+    <p>Nature's Choice Mixed Dry Fruits(200g/500g)</p>
+    <input type="text" name="grams"id="gram2"placeholder="gm">
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491186656/good-life-green-kishmish-500-g-product-images-o491186656-p491186656-0-202205180145.jpg">
+    <p>Good Life Green Kishmish (250g/500g) </p>
+    <input type="text" name="grams"id="gram3"placeholder="gm">
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/492571107/good-life-arabian-dates-500-g-product-images-o492571107-p591219105-0-202204261852.jpg">
+    <p>Good Life Arabian Dates(100g/250g)</p>
+    <input type="text" name="grams"id="gram4"placeholder="gm">
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+</div><br>
+<div style="margin-left:70px;" id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491203235/good-life-walnut-kernels-500-g-product-images-o491203235-p491203235-0-202210131717.jpg">
+    <p>Good Life Walnut Kernels(200g/500g)</p>
+    <input type="text" name="grams"id="gram5"placeholder="gm">
+    <input type="text" name="quntity"id="qun5"placeholder="Qty">
+    <input type="text" name="price" id="price5"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery5()">
+</div>
+
+<script>
+    function grocery(){
+        var   g=document.getElementById("gram").value;
+        var  q=document.getElementById("qun").value;
+           var p=g*q*0.65;
+           document.getElementById("price").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery0(){
+        var   g=document.getElementById("gram0").value;
+        var  q=document.getElementById("qun0").value;
+           var p=g*q*0.85;
+           document.getElementById("price0").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery1(){
+        var   g=document.getElementById("gram1").value;
+        var  q=document.getElementById("qun1").value;
+           var p=g*q*0.95;
+           document.getElementById("price1").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery2(){
+        var   g=document.getElementById("gram2").value;
+        var  q=document.getElementById("qun2").value;
+           var p=g*q*0.5;
+           document.getElementById("price2").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery3(){
+        var   g=document.getElementById("gram3").value;
+        var  q=document.getElementById("qun3").value;
+           var p=g*q*0.3;
+           document.getElementById("price3").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery4(){
+        var   g=document.getElementById("gram4").value;
+        var  q=document.getElementById("qun4").value;
+           var p=g*q*0.18;
+           document.getElementById("price4").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery5(){
+        var   g=document.getElementById("gram5").value;
+        var  q=document.getElementById("qun5").value;
+           var p=g*q*1.3;
+           document.getElementById("price5").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+  
+</script>
+</body>
+</html>

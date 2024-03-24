@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drinks</title>
+        <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 60px;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+    #align{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    #border{
+        width:200px;
+        height:250px;
+        border:2px solid grey;
+        border-radius: 10px;
+
+    }
+    header{
+    background-color: rgb(80, 80, 241);
+    color:white;
+   padding:5px;
+    margin-top: 30px;
+    border-radius: 10px;
+   }
+</style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Cold Drinks and Juices</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491552148/bisleri-soda-750-ml-product-images-o491552148-p491552148-0-202203171029.jpg">
+    <p>Bisleri Soda 700ml</p>
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490001795/maaza-mango-drink-1-2-l-product-images-o490001795-p490001795-0-202301272130.jpg">
+    <p>Maaza Mango Drink 1.2 L</p>
+    <input type="text" name="quntity"id="qun0"placeholder="Qty">
+    <input type="text" name="price" id="price0"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery0()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490001977/b-natural-orange-juice-1-l-product-images-o490001977-p590108362-0-202211091929.jpg">
+    <p>B Natural Orange Juice 1 L</p>
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490126725/glucon-d-regular-1-kg-product-images-o490126725-p590067032-0-202304281639.jpg">
+    <p>Glucon-D Regular 1 kg</p>
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491093909/thums-up-2-l-product-images-o491093909-p491093909-0-202203170752.jpg">
+    <p>Thums Up Cold Drink 2 L  </p>
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491071103/kinley-soda-750-ml-product-images-o491071103-p491071103-0-202203150326.jpg">
+    <p>Kinley Soda 750 ml</p>
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/original/490004166/sprite-2-25-l-product-images-o490004166-p490004166-0-202203151005.jpg">
+    <p>Sprite Cold Drink 2.25 L</p>
+    <input type="text" name="quntity"id="qun5"placeholder="Qty">
+    <input type="text" name="price" id="price5"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery5()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490005200/7up-2-25-l-product-images-o490005200-p490005200-0-202210201751.jpg">
+    <p>7 Up Cold Drink 2.25L </p>
+    <input type="text" name="quntity"id="qun6"placeholder="Qty">
+    <input type="text" name="price" id="price6"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery6()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/493660866/frooti-mango-drink-2-l-product-images-o493660866-p597738392-0-202301202030.jpg">
+    <p>Frooti Mango Drink 2 L </p>
+    <input type="text" name="quntity"id="qun7"placeholder="Qty">
+    <input type="text" name="price" id="price7"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery7()">
+</div>
+</div>
+<script>
+     function grocery(){
+         var  q=document.getElementById("qun").value;
+            var p=q*15;
+            document.getElementById("price").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery0(){
+         var  q=document.getElementById("qun0").value;
+            var p=q*60;
+            document.getElementById("price0").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery1(){
+         var  q=document.getElementById("qun1").value;
+            var p=q*65;
+            document.getElementById("price1").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery2(){
+         var  q=document.getElementById("qun2").value;
+            var p=q*190;
+            document.getElementById("price2").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery3(){
+         var  q=document.getElementById("qun3").value;
+            var p=q*70;
+            document.getElementById("price3").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery4(){
+         var  q=document.getElementById("qun4").value;
+            var p=q*18;
+            document.getElementById("price4").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery5(){
+         var  q=document.getElementById("qun5").value;
+            var p=q*90;
+            document.getElementById("price5").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery6(){
+         var  q=document.getElementById("qun6").value;
+            var p=q*72;
+            document.getElementById("price6").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+        function grocery7(){
+         var  q=document.getElementById("qun7").value;
+            var p=q*92;
+            document.getElementById("price7").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+</script>
+</body>
+</html>

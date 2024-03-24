@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snacks</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            width: 60px;
+        }
+        img{
+            width:200px;
+            height:150px;
+        }
+        #align{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+        #border{
+            width:200px;
+            height:250px;
+            border:2px solid grey;
+            border-radius: 10px;
+
+        }
+        header{
+        background-color: rgb(76, 76, 243);
+        color:white;
+       padding: 5px;
+        margin-top: 30px;
+        border-radius: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Snacks</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490003816/kurkure-masala-munch-77-g-product-images-o490003816-p490003816-0-202303220254.jpg">
+    <p>Kurkure Masala Munch 77 g</p>
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490009551/haldiram-s-nagpur-bhujia-sev-1-kg-product-images-o490009551-p490009551-0-202203170200.jpg">
+    <p>Haldiram's Bhujia Sev 1 kg</p>
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491416476/bhikharam-chandmal-bikaneri-bhujia-1-kg-product-images-o491416476-p491416476-0-202203151830.jpg">
+    <p>Bhikharam Chandmal Bikaneri Bhujia 1 kg</p>
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491551830/bingo-peri-peri-mad-angles-130-g-product-images-o491551830-p491551830-0-202203150713.jpg">
+    <p>Bingo Peri Peri Mad Angles 130 g</p>
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rvqqhasrsu/indiyum-bakarwadi-300g-product-images-orvqqhasrsu-p590996826-0-202201112335.jpg">
+    <p>Indiyum Bakarwadi 300g</p>
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490960245/act-ii-classic-salted-instant-popcorn-90-g-30-g-product-images-o490960245-p490960245-0-202203141906.jpg">
+    <p>Act II Classic Salted Instant Popcorn 90 g</p>
+    <input type="text" name="quntity"id="qun5"placeholder="Qty">
+    <input type="text" name="price" id="price5"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery5()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rvnoocgccm/ghotaram-weir-traditional-toast-rusk-mouth-watering-toast-rusk-crunchy-breakfast-toast-rusk-chai-snacks-150gm-product-images-orvnoocgccm-p598875933-0-202302270907.png">
+    <p>GHOTARAM Weir Traditional Toast/Rusk/Mouth 150g</p>
+    <input type="text" name="quntity"id="qun6"placeholder="Qty">
+    <input type="text" name="price" id="price6"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery6()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490008739/parle-g-original-glucose-biscuits-800-g-product-images-o490008739-p490008739-0-202203170454.jpg">
+    <p>Parle-G Original Glucose Biscuits 800 g</p>
+    <input type="text" name="quntity"id="qun7"placeholder="Qty">
+    <input type="text" name="price" id="price7"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery7()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/rvsns4oiyl/singla-kaju-katli-burfi-sweets-200g-product-images-orvsns4oiyl-p591422824-0-202205180951.jpg">
+    <p>Singla Kaju Katli Burfi Sweets 200G</p>
+    <input type="text" name="quntity"id="qun8"placeholder="Qty">
+    <input type="text" name="price" id="price8"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery8()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491264336/britannia-classic-little-hearts-biscuits-75-g-product-images-o491264336-p491264336-0-202203142043.jpg">
+    <p>Britannia Classic Little Hearts Biscuits 75 g</p>
+    <input type="text" name="quntity"id="qun9"placeholder="Qty">
+    <input type="text" name="price" id="price9"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery9()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490985468/mcvitie-s-digestive-biscuits-959-1-g-product-images-o490985468-p490985468-0-202305211234.jpg">
+    <p>McVitie's Digestive Biscuits 959.1 g</p>
+    <input type="text" name="quntity"id="qun10"placeholder="Qty">
+    <input type="text" name="price" id="price10"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery10()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490655174/chheda-s-soya-snax-170-g-product-images-o490655174-p490655174-0-202203170224.jpg">
+    <p>Chheda's Soya Snax 170 g</p>
+    <input type="text" name="quntity"id="qun11"placeholder="Qty">
+    <input type="text" name="price" id="price11"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery11()">
+</div>
+</div>
+    <script>
+        function grocery(){
+         var  q=document.getElementById("qun").value;          
+            var p=q*18;         
+            document.getElementById("price").value=p; 
+           if(p!=0){
+            alert("Item Added To Cart");
+           }   
+        }
+        function grocery1(){
+         var  q=document.getElementById("qun1").value;
+            var p=q*208;
+            document.getElementById("price1").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery2(){
+         var  q=document.getElementById("qun2").value;
+            var p=q*195;
+            document.getElementById("price2").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery3(){
+         var  q=document.getElementById("qun3").value;
+            var p=q*37;
+            document.getElementById("price3").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery4(){
+         var  q=document.getElementById("qun4").value;
+            var p=q*160;
+            document.getElementById("price4").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery5(){
+         var  q=document.getElementById("qun5").value;
+            var p=q*33;
+            document.getElementById("price5").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery6(){
+         var  q=document.getElementById("qun6").value;
+            var p=q*219;
+            document.getElementById("price6").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery7(){
+         var  q=document.getElementById("qun7").value;
+            var p=q*78;
+            document.getElementById("price7").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery8(){
+         var  q=document.getElementById("qun8").value;
+            var p=q*274;
+            document.getElementById("price8").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery9(){
+         var  q=document.getElementById("qun9").value;
+            var p=q*24;
+            document.getElementById("price9").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery10(){
+         var  q=document.getElementById("qun10").value;
+            var p=q*135;
+            document.getElementById("price10").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery11(){
+         var  q=document.getElementById("qun11").value;
+            var p=q*40;
+            document.getElementById("price11").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        
+    </script>
+</body>
+</html>

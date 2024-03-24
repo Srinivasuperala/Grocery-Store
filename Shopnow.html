@@ -1,0 +1,312 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grocery</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            width: 60px;
+        }
+        img{
+            width:200px;
+            height:150px;
+        }
+        #align{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+        #border{
+            width:270px;
+            height:250px;
+            border:2px solid grey;
+            border-radius: 10px;
+
+        }
+        header{
+        background-color: rgb(76, 76, 243);
+        color:white;
+       padding: 10px 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Groceries</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://m.media-amazon.com/images/I/61rDJVoKpeL._SX569_.jpg">
+    <p>surf excel powder(100g/500g/1000g)</p><br>
+    <input type="text" name="grams"id="gram"placeholder="gm">
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://m.media-amazon.com/images/I/71YYi5rzqnS._SL1500_.jpg">
+    <p>Sona Masoori Rice Bag  (5kg/10kg/25kg)</p><br>
+    <input type="text" name="grams"id="gram1"placeholder="kg">
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/490830932/tata-sampann-unpolished-tur-arhar-dal-1-kg-product-images-o490830932-p490830932-0-202207201859.jpg">
+    <p>Tata Sampann Unpolished Tur/Arhar Dal(0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram2"placeholder="kg">
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/490000052/fortune-sunlite-refined-sunflower-oil-1-l-product-images-o490000052-p490000052-0-202203150155.jpg">
+    <p>Fortunr Sunlite Refined Sunfolwer Oil (1 Lit)</p>
+    <input type="text" name="grams"id="gram3"placeholder="liter">
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/490903451/gulab-gold-filtered-groundnut-oil-15-kg-product-images-o490903451-p490903451-0-202206301905.jpg">
+    <p>Gulab Gold Filtered Groundnut Oil (5kg/15kg)</p>
+    <input type="text" name="grams"id="gram4"placeholder="kg">
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/490750662/aashirvaad-superior-mp-whole-wheat-atta-10-kg-product-images-o490750662-p590150649-0-202203171046.jpg">
+    <p>Aashirvaad Superior Wheat Atta (1kg/5kg/10kg)</p>
+    <input type="text" name="grams"id="gram5"placeholder="kg">
+    <input type="text" name="quntity"id="qun5"placeholder="Qty">
+    <input type="text" name="price" id="price5"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery5()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490922074/24-mantra-organic-ragi-flour-500-g-product-images-o490922074-p490922074-0-202209271720.jpg">
+    <p>24 Mantra Organic Ragi Flour (0.5kg/1kg/5kg)</p>
+    <input type="text" name="grams"id="gram6"placeholder="kg">
+    <input type="text" name="quntity"id="qun6"placeholder="Qty">
+    <input type="text" name="price" id="price6"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery6()">
+</div>
+<div id="border">
+    <img src="https://m.media-amazon.com/images/I/715DkyRVhTL._SL1500_.jpg">
+    <p>24 Mantra Organic Idly Rava (0.5kg/1kg)</p><br>
+    <input type="text" name="grams"id="gram7"placeholder="kg">
+    <input type="text" name="quntity"id="qun7"placeholder="Qty">
+    <input type="text" name="price" id="price7"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery7()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490000109/everest-tikhalal-chilli-powder-100-g-product-images-o490000109-p490000109-0-202203151655.jpg">
+    <p>Everest Tikhalal Chilli Powder (100g/250g/500g)</p>
+    <input type="text" name="grams"id="gram8"placeholder="gm">
+    <input type="text" name="quntity"id="qun8"placeholder="Qty">
+    <input type="text" name="price" id="price8"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery8()">
+</div>
+</div><br>
+<div id="align">
+<div id="border">
+    <img src="https://rukminim1.flixcart.com/image/832/832/kph8h3k0/spice-masala/3/j/h/1-hp002-pouch-j-1-powder-original-imag3p77hs74ys5r.jpeg?q=70">
+    <p>J-1 Turmeric Powder  (50g/100g/250g)</p><br>
+    <input type="text" name="grams"id="gram9"placeholder="gm">
+    <input type="text" name="quntity"id="qun9"placeholder="Qty">
+    <input type="text" name="price" id="price9"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery9()">
+</div>
+<div id="border">
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRA1pmqLoCsqhQLNwxwiJPjSHkybMPwQB3T_vOjVqoZQpfeIBkVwfm3o-n8KJClatVqaxef-BbJYaE4xLpbqHnZlITcIHbHyu7uQfJ6p9TpG7W5ZfobuGk3Mw&usqp=CAE">
+    <p>GFC Garam Masala Powder(50g/100g/200g)</p>
+    <input type="text" name="grams"id="gram10"placeholder="gm">
+    <input type="text" name="quntity"id="qun10"placeholder="Qty">
+    <input type="text" name="price" id="price10"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery10()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/492864616/nature-s-choice-mixed-dry-fruits-400-g-product-images-o492864616-p592271389-0-202206291923.jpg">
+    <p>Nature's Choice Mixed Dry Fruits(250g/500g/1000g)</p>
+    <input type="text" name="grams"id="gram11"placeholder="gm">
+    <input type="text" name="quntity"id="qun11"placeholder="Qty">
+    <input type="text" name="price" id="price11"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery11()">
+</div>
+</div><br><br>
+<div id="align">
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/rvpgcirnpe/yum-yum-dry-fruits-combo-pack-1kg-almonds-250g-cashew-250g-pista-250g-kishmish-250g-product-images-orvpgcirnpe-p590979589-0-202201031430.png">
+    <p>YUM YUM Dry Fruits Combo Pack(1kg/2kg/4kg)</p>
+    <input type="text" name="grams"id="gram12"placeholder="kg">
+    <input type="text" name="quntity"id="qun12"placeholder="Qty">
+    <input type="text" name="price" id="price12"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery12()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491551493/good-life-sugar-m-1-kg-product-images-o491551493-p491551493-0-202204281542.jpg">
+    <p>Good Life Sugar(0.5kg/1kg)</p><br>
+    <input type="text" name="grams"id="gram13"placeholder="kg">
+    <input type="text" name="quntity"id="qun13"placeholder="Qty">
+    <input type="text" name="price" id="price13"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery13()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/360x360/490000073/tata-iodised-salt-1-kg-product-images-o490000073-p490000073-0-202302131739.jpg">
+    <p>Tata Iodised Salt (0.5kg/1kg)</p><br>
+    <input type="text" name="grams"id="gram14"placeholder="kg">
+    <input type="text" name="quntity"id="qun14"placeholder="Qty">
+    <input type="text" name="price" id="price14"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery14()">
+</div>
+</div>
+
+    <script>
+        function grocery(){
+         var   g=document.getElementById("gram").value;
+         var  q=document.getElementById("qun").value;          
+            var p=g*q*0.15;         
+            document.getElementById("price").value=p; 
+            if(p!=0){
+            alert("Item Added To Cart");
+           }   
+        }
+        function grocery1(){
+         var   kg=document.getElementById("gram1").value;
+         var  q=document.getElementById("qun1").value;
+            var p=kg*q*45;
+            document.getElementById("price1").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery2(){
+         var   kg=document.getElementById("gram2").value;
+         var  q=document.getElementById("qun2").value;
+            var p=kg*q*150;
+            document.getElementById("price2").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery3(){
+         var   lit=document.getElementById("gram3").value;
+         var  q=document.getElementById("qun3").value;
+            var p=lit*q*120;
+            document.getElementById("price3").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery4(){
+         var   kg=document.getElementById("gram4").value;
+         var  q=document.getElementById("qun4").value;
+            var p=kg*q*200;
+            document.getElementById("price4").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery5(){
+         var   kg=document.getElementById("gram5").value;
+         var  q=document.getElementById("qun5").value;
+            var p=kg*q*40;
+            document.getElementById("price5").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery6(){
+         var   kg=document.getElementById("gram6").value;
+         var  q=document.getElementById("qun6").value;
+            var p=kg*q*120;
+            document.getElementById("price6").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery7(){
+         var   kg=document.getElementById("gram7").value;
+         var  q=document.getElementById("qun7").value;
+            var p=kg*q*42;
+            document.getElementById("price7").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery8(){
+         var   g=document.getElementById("gram8").value;
+         var  q=document.getElementById("qun8").value;
+            var p=g*q*0.5;
+            document.getElementById("price8").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery9(){
+         var   g=document.getElementById("gram9").value;
+         var  q=document.getElementById("qun9").value;
+            var p=g*q*0.35;
+            document.getElementById("price9").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery10(){
+         var   g=document.getElementById("gram10").value;
+         var  q=document.getElementById("qun10").value;
+            var p=g*q*0.6;
+            document.getElementById("price10").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery11(){
+         var   g=document.getElementById("gram11").value;
+         var  q=document.getElementById("qun11").value;
+            var p=g*q*0.5;
+            document.getElementById("price11").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery12(){
+         var   kg=document.getElementById("gram12").value;
+         var  q=document.getElementById("qun12").value;
+            var p=kg*q*900;
+            document.getElementById("price12").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery13(){
+         var   kg=document.getElementById("gram13").value;
+         var  q=document.getElementById("qun13").value;
+            var p=kg*q*45;
+            document.getElementById("price13").value=p;
+            if(p!=0){
+            alert("Item Added To Cart");
+           }
+        }
+        function grocery14(){
+         var   kg=document.getElementById("gram14").value;
+         var  q=document.getElementById("qun14").value;
+            var p=kg*q*25;
+            document.getElementById("price14").value=p;
+            if(p!=0){
+                alert("Item Added To Cart");
+            }
+        }
+    </script>
+</body>
+</html>

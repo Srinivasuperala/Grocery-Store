@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Masala and Spieces</title>
+        <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 60px;
+    }
+    img{
+        width:200px;
+        height:150px;
+    }
+    #align{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    #border{
+        width:270px;
+        height:250px;
+        border:2px solid grey;
+        border-radius: 10px;
+
+    }
+    header{
+    background-color: rgb(78, 78, 241);
+    color:white;
+   padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+   }
+</style>
+</head>
+<body>
+    <header>     
+       <center> <h1>Masala and Spieces</h1></center>
+        </header><br><br>
+   
+    <div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490069981/catch-red-chilli-powder-500-g-product-images-o490069981-p490069981-0-202203171036.jpg">
+    <p>Catch Red Chilli Powder (0.5kg/1kg)</p>
+    <input type="text" name="grams"id="gram"placeholder="gm">
+    <input type="text" name="quntity"id="qun"placeholder="Qty">
+    <input type="text" name="price" id="price"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490803894/smith-jones-ginger-garlic-paste-200-g-product-images-o490803894-p490803894-0-202207251655.jpg">
+    <p>Smith & Jones Ginger Garlic Paste 200 g   </p>
+    <input type="text" name="grams"id="gram0"placeholder="gm">
+    <input type="text" name="quntity"id="qun0"placeholder="Qty">
+    <input type="text" name="price" id="price0"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery0()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490000151/catch-kitchen-king-masala-100-g-product-images-o490000151-p490000151-0-202203170408.jpg">
+    <p>Catch Kitchen King Masala 100 g</p>
+    <input type="text" name="grams"id="gram1"placeholder="gm">
+    <input type="text" name="quntity"id="qun1"placeholder="Qty">
+    <input type="text" name="price" id="price1"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery1()">
+</div>
+</div><br>
+<div id="align">
+    <div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491185054/good-life-turmeric-powder-500-g-product-images-o491185054-p491185054-0-202203170719.jpg">
+    <p>Good Life Turmeric Powder 500 g</p>
+    <input type="text" name="grams"id="gram2"placeholder="gm">
+    <input type="text" name="quntity"id="qun2"placeholder="Qty">
+    <input type="text" name="price" id="price2"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery2()">
+</div><div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/490012741/everest-chicken-masala-100-g-product-images-o490012741-p490012741-0-202304281537.jpg">
+    <p>Everest Chicken Masala 100 g  </p>
+    <input type="text" name="grams"id="gram3"placeholder="gm">
+    <input type="text" name="quntity"id="qun3"placeholder="Qty">
+    <input type="text" name="price" id="price3"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery3()">
+</div>
+<div id="border">
+    <img src="https://www.jiomart.com/images/product/600x600/491696144/maggi-masala-ae-magic-120-g-pack-of-20-product-images-o491696144-p593411735-0-202208162017.jpg">
+    <p>Maggi Masala Ae Magic(100g/200g)</p>
+    <input type="text" name="grams"id="gram4"placeholder="gm">
+    <input type="text" name="quntity"id="qun4"placeholder="Qty">
+    <input type="text" name="price" id="price4"placeholder="amount">
+    <input type="button" value="Add" onclick="grocery4()">
+</div>
+</div>
+
+<script>
+    function grocery(){
+        var   g=document.getElementById("gram").value;
+        var  q=document.getElementById("qun").value;
+           var p=g*q*400;
+           document.getElementById("price").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery0(){
+        var   g=document.getElementById("gram0").value;
+        var  q=document.getElementById("qun0").value;
+           var p=g*q*0.225;
+           document.getElementById("price0").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery1(){
+        var   g=document.getElementById("gram1").value;
+        var  q=document.getElementById("qun1").value;
+           var p=g*q*0.4;
+           document.getElementById("price1").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery2(){
+        var   g=document.getElementById("gram2").value;
+        var  q=document.getElementById("qun2").value;
+           var p=g*q*0.2;
+           document.getElementById("price2").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery3(){
+        var   g=document.getElementById("gram3").value;
+        var  q=document.getElementById("qun3").value;
+           var p=g*q*0.75;
+           document.getElementById("price3").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       function grocery4(){
+        var   g=document.getElementById("gram4").value;
+        var  q=document.getElementById("qun4").value;
+           var p=g*q*0.775;
+           document.getElementById("price4").value=p;
+           if(p!=0){
+               alert("Item Added To Cart");
+           }
+       }
+       
+  
+</script>
+</body>
+</html>

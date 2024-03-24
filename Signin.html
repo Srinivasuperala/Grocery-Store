@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <style>
+            body{
+                background-color:cornflowerblue;
+            }
+div{
+    border:2px solid rgb(235, 159, 159);
+    width: 30%;
+    height: auto;
+    text-align:center;
+    margin-left:35%;
+    margin-top: 10%;
+    border-radius:5px;
+    background-color: rgb(208, 227, 243);
+}
+p{
+    font-weight: bold;
+}
+        </style>
+    </head>
+    <body>
+        
+    <div>
+<center><h2>Sign in Form</h2></center>
+
+<form name="form" action="grocery list.html"method="" onsubmit="return validate()">
+<p>Full Name:<input type="text" name="name"placeholder="Name">
+    <p>Enter Number:<input type="text" name="number" placeholder="Number"> 
+  <p>Enter Password:<input type="password" name="password"><br><br>
+    <input type="submit" value="Sign in">
+      <script>
+        function validate(){
+           var nam=document.form.name.value;
+            if(nam==null||nam==""){
+                alert("Enter your name");
+            }
+            var num=document.form.number.value;
+        if(isNaN(num)){
+            alert("Enter Valid Number");  
+            return false;
+        }
+        
+       var pw=document.form.password.value;
+        if(pw.length<=5){
+            alert("Entered password must be 6 characters");
+            return false;
+        }
+        }
+      </script>  
+    </form> 
+    </div>
+</body>
+</html>
